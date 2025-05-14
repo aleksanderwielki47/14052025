@@ -8,14 +8,14 @@ public class Main {
         if(odpowiedz == 1) {
             for (int i = 1; i <= 31; i++) {
                 System.out.print("Dzien " + i + ": ");
-                if (i % 3 == 0) {
-                    System.out.print("kupon na darmowa dostawe");
+                if (i % 3 == 0 && i % 5 == 0) {
+                    System.out.print("SUPER BONUS: kupon na darmowa dostawe + znizka 10%");
                     System.out.println();
                 } else if (i % 5 == 0) {
                     System.out.print("znizka 10%");
                     System.out.println();
-                } else if (i % 3 == 0 && i % 5 == 0) {
-                    System.out.print("SUPER BONUS: kupon na darmowa dostawe + znizka 10%");
+                } else if (i % 3 == 0) {
+                    System.out.print("kupon na darmowa dostawe");
                     System.out.println();
                 } else {
                     System.out.print("brak promocji");
@@ -30,14 +30,14 @@ public class Main {
             int dzien2 = sc.nextInt();
            for(int i = dzien1; i <= dzien2; i++) {
                System.out.print("Dzien " + i + ": ");
-               if (i % 3 == 0) {
-                   System.out.print("kupon na darmowa dostawe");
+               if (i % 3 == 0 && i % 5 == 0) {
+                   System.out.print("SUPER BONUS: kupon na darmowa dostawe + znizka 10%");
                    System.out.println();
                } else if (i % 5 == 0) {
                    System.out.print("znizka 10%");
                    System.out.println();
-               } else if (i % 3 == 0 && i % 5 == 0) {
-                   System.out.print("SUPER BONUS: kupon na darmowa dostawe + znizka 10%");
+               } else if (i % 3 == 0) {
+                   System.out.print("kupon na darmowa dostawe");
                    System.out.println();
                } else {
                    System.out.print("brak promocji");
